@@ -4,10 +4,69 @@
 }
 
 :root {
+
+  /* COLORS */
   color-scheme: light dark;
   --text-color: light-dark(#000, #fff);
 
-  --regular-text-size: 20px;
-  --h2-text-size: 30px;
-  --h3-text-size: 25px;
+  /* TEXT SIZE */
+  --regular-text-size: 1rem;
+  --h2-text-size: 2rem;
+  --h3-text-size: 1.5rem;
+
+  /* PADDIN? MARGIN SIZE */
+  --padding-size: 1rem;
+
+  /* FONTS */
+  --font-headers: Fugaz one, Impact, Marker Felt, Verdana;
 }
+
+
+/* INSERTING FONTS */
+@font-face {
+  /* https://www.1001fonts.com/fugaz-one-font.html */
+  font-family: Fugaz one;
+  src: url(/fonts/fugaz-one.regular.ttf) ;
+}
+
+@font-face {
+  /* https://fonts.google.com/specimen/Work+Sans */
+  font-family: "Work sans";
+  src: url(/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display */
+  font-display: swap;
+}
+
+
+/* BASIC STYLING */
+body {
+  padding: var(--padding-size);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-start: 2;
+  gap: var(--padding-size);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 1px #b1b1b1;
+  border-radius: 2rem;
+  padding: var(--padding-size);
+}
+
+h1 {
+  font-family: var(--font-headers);
+}
+
+p {
+  font-family: Work sans;
+}
+
+
