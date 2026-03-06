@@ -7,6 +7,7 @@
 
   /* COLORS */
   color-scheme: light dark;
+  --header-color: light-dark(#fff, #000) ;
   --text-color: light-dark(#000, #fff);
 
   /* TEXT SIZE */
@@ -43,7 +44,20 @@
 /* BASIC STYLING */
 body {
   padding: var(--padding-size);
+  font-family: Work sans;
+
 }
+
+header {
+border-bottom:1px solid var(--text-color);
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--padding-size);
+    
+  }
+}
+
 
 section {
   display: grid;
@@ -63,10 +77,12 @@ article {
 
 h1 {
   font-family: var(--font-headers);
+  color: var(--header-color);
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
 }
 
-p {
-  font-family: Work sans;
-}
 
 
