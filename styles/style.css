@@ -12,6 +12,7 @@
 
   /* TEXT SIZE */
   --regular-text-size: 1rem;
+  --h1-text-size: 2.5rem;
   --h2-text-size: 2rem;
   --h3-text-size: 1.5rem;
 
@@ -58,26 +59,11 @@ border-bottom:1px solid var(--text-color);
   }
 }
 
-
-section {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-row-start: 2;
-  gap: var(--padding-size);
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-
-  border: solid 1px #b1b1b1;
-  border-radius: 2rem;
-  padding: var(--padding-size);
-}
-
 h1 {
   font-family: var(--font-headers);
   color: var(--header-color);
+  font-size: var(--h1-text-size);
+
   text-transform: uppercase;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;

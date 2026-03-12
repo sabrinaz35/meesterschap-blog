@@ -1,0 +1,19 @@
+
+section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-start: 2;
+  gap: var(--padding-size);
+  place-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 1px #b1b1b1;
+  border-radius: 2rem;
+  padding: var(--padding-size);
+
+  max-width: 30rem;
+}
