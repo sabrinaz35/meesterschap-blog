@@ -44,7 +44,7 @@
 
 /* BASIC STYLING */
 body {
-  padding: var(--padding-size);
+  padding: 0 var(--padding-size);
   font-family: Work sans;
 
 }
@@ -59,7 +59,12 @@ border-bottom:1px solid var(--text-color);
   }
 }
 
-h1 {
+main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-color);
+
+  h1 {
   font-family: var(--font-headers);
   color: var(--header-color);
   font-size: var(--h1-text-size);
@@ -69,6 +74,8 @@ h1 {
     1px 1px 0 #000;
 
 }
+}
+
 
 
 
