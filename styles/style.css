@@ -9,12 +9,14 @@
   color-scheme: light dark;
   --header-color: light-dark(#fff, #000) ;
   --text-color: light-dark(#000, #fff);
-  --color-1: light-dark(#000, #fff);
+  --color-1: light-dark(#80399b, rgba(255, 168, 216));
+  --backgound-color: light-dark(#fff, #000);
+
 
   /* TEXT SIZE */
   --regular-text-size: 1rem;
-  --h1-text-size: 2.5rem;
-  --h2-text-size: 2rem;
+  --h1-text-size: 2rem;
+  --h2-text-size: 1.75rem;
   --h3-text-size: 1.5rem;
 
   /* PADDIN? MARGIN SIZE */
@@ -45,49 +47,47 @@
 
 /* BASIC STYLING */
 body {
-  padding: 0 var(--padding-size);
   font-family: Work sans;
 
 }
 
 header {
-  /* border-bottom:1px solid var(--text-color); */
 
 
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    padding: var(--padding-size);
+    width: fit-content;
+    justify-self: center;
+    padding: var(--padding-size) 2vw;
 
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color-1);
     border-radius: 20px;
     margin: 1rem 0;
+  
+    /* box-shadow: 0px 0px 20px 5px var(--color-1); */
 
     a {
       text-decoration: none;
+      padding: 0 2vw;
     }
   }
 }
 
 main {
   display: flex;
-  justify-content: center;
-  background-color: var(--header-color);
-  flex-direction: column;
+  position: relative;
+
 
   h1 {
   font-family: var(--font-headers);
   color: var(--header-color);
   font-size: var(--h1-text-size);
-
+  /* overflow-wrap: break-word; */
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-
-}
+  text-shadow: -1px -1px 0 var(--text-color), 1px -1px 0 var(--text-color), -1px 1px 0 var(--text-color),
+    1px 1px 0 var(--text-color);
 }
 
-
-
-
+}
