@@ -4,8 +4,8 @@ main {
   flex-direction: column;
   width: 100vw;
   height: 80vh;
-}
 
+}
 
 .background {
   position: absolute;
@@ -15,37 +15,76 @@ main {
   height: 80%;
   padding:0 2rem;
 
-
-
+  /* Styling blobs */
   div {
-    --width: 10rem;
+    --width: 15rem;
+    --top-position: 25%;
+    --right-position: 80%;
 
     position: absolute;
     width: var(--width);
     aspect-ratio: 1/1;
-    background-color: orange;
+    background-color: var(--blob-color-2);
     z-index: -1;
 
     border-radius: 50%;
-    filter: blur(calc(var(--width) / 2));
-    top: 25%;
+    /* even tijdelijk uitgezet voor de movement */
+    /* filter: blur(calc(var(--width) / 2.5)); */
+    top: var(--top-position);
+    right: var(--right-position);
 
-   &:nth-of-type(2){
-    --width: 6rem;
-    background-color: deeppink;
-    top: 30%;
-    right: 40%;
-   }
+  animation: movingBlob 10s ease infinite;
+
+  &:nth-of-type(2){
+    --width: 10rem;
+    background-color: var( --blob-color-3);
+    /* top: calc(var(--top-position) + 5%); */
+    --top-position:10%;
+    --right-position: 40%;
+  }
 
   &:nth-of-type(3){
     --width: 10rem;
-    background-color: purple;
-    top: 40%;
+    background-color: var( --blob-color-1);
+    top: calc(var(--top-position) + 15%);
     right: 10%;
-   }
+  }
+
+  &:nth-of-type(4){
+    --width: 15rem;
+    background-color: var( --blob-color-3);
+    top: calc(var(--top-position) + 35%);
+    right: 30%;
+  }
+
+    &:nth-of-type(5){
+    --width: 12rem;
+    background-color: var( --blob-color-1);
+    top: calc(var(--top-position) + 35%);
+    right: 80%;
+  }
+
+    &:nth-of-type(6){
+    --width: 15rem;
+    background-color: var(--blob-color-2);
+    top: 90%;
+    right: 50%;
+  }
   }
 }
 
+/* Nog zoekende in hoe ik het beste de blobs kan laten bewegen */
+@keyframes movingBlob {
+  0%, 100% {
+    transform: translate(0);
+  }25%{
+    transform: translatey(calc(var(--right-position) + -20%));
+  } 50%, 60% {
+    transform: translateX(calc(var(--top-position) + -10%));
+  } 75% {
+    transform: translatey(calc(var(--right-position) + 20%));
+  } 
+}
 
 
 

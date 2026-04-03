@@ -12,6 +12,10 @@
   --color-1: light-dark(#80399b, rgba(255, 168, 216));
   --backgound-color: light-dark(#fff, #000);
 
+  /* BLOB COLORS */
+  --blob-color-1:light-dark(#80399b, #ba44e8);
+  --blob-color-2:light-dark(#5ab6ad, #9dd8d2);
+  --blob-color-3:light-dark(deeppink, rgb(255, 133, 198));
 
   /* TEXT SIZE */
   --regular-text-size: 1rem;
@@ -88,6 +92,7 @@ main {
   text-transform: uppercase;
   text-shadow: -1px -1px 0 var(--text-color), 1px -1px 0 var(--text-color), -1px 1px 0 var(--text-color),
     1px 1px 0 var(--text-color);
+  text-align: center;
 }
 
 }

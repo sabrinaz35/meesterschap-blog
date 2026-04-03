@@ -14,14 +14,22 @@ article {
   padding: var(--padding-size);
 
   max-width: 30rem;
+  margin: 1rem 0;
 
 
-  /* background: rgba(255, 168, 216, 0.239);
+  background: rgba(255, 168, 216, 0.239);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 168, 216, 0.56);
-  box-shadow: 0px 0px 10px 2px var(--color-1); */
+  box-shadow: 0px 0px 10px 2px var(--color-1);
   
+  p:first-of-type {
+    font-style: italic;
+  }
+
+  p:first-of-type ~ p {
+    margin-top: 1rem;
+  }
 }
