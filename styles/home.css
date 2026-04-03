@@ -29,7 +29,7 @@ main {
 
     border-radius: 50%;
     /* even tijdelijk uitgezet voor de movement */
-    /* filter: blur(calc(var(--width) / 2.5)); */
+    filter: blur(calc(var(--width) / 3));
     top: var(--top-position);
     right: var(--right-position);
 

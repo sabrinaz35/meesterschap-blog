@@ -14,7 +14,7 @@ article {
   padding: var(--padding-size);
 
   max-width: 30rem;
-  margin: 1rem 0;
+  margin: 1rem .5rem;
 
 
   background: rgba(255, 168, 216, 0.239);
