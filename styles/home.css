@@ -73,16 +73,28 @@ main {
   }
 }
 
+@media (width > 850px) {
+  .background {
+    div {
+      width: calc(var(--width) * 1.8);
+      filter: blur(calc(var(--width) / 1.8));
+    }
+  }
+}
+
 /* Nog zoekende in hoe ik het beste de blobs kan laten bewegen */
 @keyframes movingBlob {
   0%, 100% {
     transform: translate(0);
   }25%{
+    transform: translatex(calc(var(--right-position) + -20%));
     transform: translatey(calc(var(--right-position) + -20%));
   } 50%, 60% {
-    transform: translateX(calc(var(--top-position) + -10%));
+    transform: translatey(calc(var(--top-position) + 20%));
+    transform: translateX(calc(var(--right-position) + 25%));
   } 75% {
-    transform: translatey(calc(var(--right-position) + 20%));
+    transform: translatex(calc(var(--right-position) + 20%));
+    transform: translatey(calc(var(--right-position) + -20%));
   } 
 }
 

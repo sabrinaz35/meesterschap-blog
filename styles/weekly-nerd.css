@@ -1,8 +1,40 @@
+html {
+  position: relative;
+}
+
+body {
+  background: linear-gradient(45deg, var(--blob-color-1), var(--blob-color-3));
+  mix-blend-mode: multiply(1);
+
+  &::after {
+    content: " ";
+    min-height: 100%;
+    position: absolute;
+    inset: 0; 
+    background-image: radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent .65rem), radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent 0.65rem);;
+    background-repeat: round;
+    background-position: 0 0, 0.65rem 0.65rem;
+    background-size: 1.3rem 1.3rem;
+
+    mask-image: linear-gradient( rgb(0 0 0 / 0), rgb(0 0 0));
+    z-index: -1;
+  }
+
+}
 
 main {
   display: flex;
   flex-direction: column;
   place-items: center;
+
+
+}
+
+header {
+
+  nav{
+    background-color: white;
+  }
 }
 
 article {
