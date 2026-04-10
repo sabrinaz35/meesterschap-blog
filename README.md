@@ -13,6 +13,8 @@ Tijdens deze minor heb ik verschillende leerdoelen voor mijzelf gesteld die luid
 - https://fonts.google.com/specimen/Work+Sans 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display 
 
+- https://css-irl.info/css-halftone-patterns/
+
 
 ## Inspo tutorials
 - https://www.frontend.fyi/tutorials/make-a-gradient-follow-the-cursor 
