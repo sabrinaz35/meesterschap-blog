@@ -4,7 +4,7 @@ html {
 
 /* https://css-irl.info/css-halftone-patterns/ */
 body {
-  background: linear-gradient(45deg, var(--blob-color-1), var(--blob-color-3));
+  background: linear-gradient(45deg, var(--blob-color-1), black);
   mix-blend-mode: multiply(1);
 
   &::after {
@@ -12,7 +12,7 @@ body {
     min-height: 100%;
     position: absolute;
     inset: 0; 
-    background-image: radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent .65rem), radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent 0.65rem);;
+    /* background-image: radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent .65rem), radial-gradient(circle at center, var(--blob-color-2) 0.06rem, transparent 0.65rem);; */
     background-repeat: round;
     background-position: 0 0, 0.65rem 0.65rem;
     background-size: 1.3rem 1.3rem;
@@ -28,13 +28,28 @@ main {
   flex-direction: column;
   place-items: center;
 
+  h1{
+    margin: 2rem 0;
+  }
 
+  section:nth-of-type(2){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    gap: 1rem;
+  }
 }
 
 header {
 
   nav{
-    background-color: white;
+    background: rgba(255, 168, 216, 0.239);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 168, 216, 0.56);
+    box-shadow: 0px 0px 10px 2px var(--color-1);
   }
 }
 
@@ -47,7 +62,7 @@ article {
   padding: var(--padding-size);
 
   max-width: 30rem;
-  margin: 1rem .5rem;
+  margin: 2rem .5rem;
 
 
   background: rgba(255, 168, 216, 0.239);
@@ -64,5 +79,32 @@ article {
 
   p:first-of-type ~ p {
     margin-top: 1rem;
+  }
+}
+
+
+/* Julius heeft mij hierbij geholpen */
+@supports (animation-timeline:scroll()){
+  section:nth-of-type(2){
+    overflow: clip;
+
+    div::nth-of-type(odd){
+      transform: translateY(calc(-100% + 100vh));
+    }
+
+  }
+}
+
+div:nth-of-type(odd){
+  animation: moveArticles linear forwards;
+  animation-timeline: scroll(root block);
+}
+
+
+@keyframes moveArticles{
+  from {
+    transform: translateY(calc(-100% + 100vh));
+  } to {
+    transform: translateY(calc(100% - 100vh));
   }
 }

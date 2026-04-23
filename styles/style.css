@@ -82,15 +82,16 @@ header {
 main {
   display: flex;
   position: relative;
+  
 
 
   h1 {
   font-family: var(--font-headers);
-  color: var(--header-color);
+  /* color: var(--header-color); */
   font-size: var(--h1-text-size);
   /* overflow-wrap: break-word; */
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 var(--text-color), 1px -1px 0 var(--text-color), -1px 1px 0 var(--text-color),
+  text-shadow: 0px 0px 0 var(--blob-color-1), 3px -1px 0 var(--color-1), -1px 1px 0 var(--text-color),
     1px 1px 0 var(--text-color);
   text-align: center;
 }
