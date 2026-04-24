@@ -8,9 +8,9 @@
   /* COLORS */
   color-scheme: light dark;
   --header-color: light-dark(#fff, #000) ;
-  --text-color: light-dark(#000, #fff);
+  --text-color: light-dark(#fff, #000);
   --color-1: light-dark(#80399b, rgba(255, 168, 216));
-  --backgound-color: light-dark(#fff, #000);
+  --backgound-color: light-dark(#000, #fff);
 
   /* BLOB COLORS */
   --blob-color-1:light-dark(#80399b, #ba44e8);
@@ -52,6 +52,7 @@
 /* BASIC STYLING */
 body {
   font-family: Work sans;
+  background-color: var(  --backgound-color);
 
 }
 
@@ -75,6 +76,7 @@ header {
     a {
       text-decoration: none;
       padding: 0 2vw;
+      color: var(--text-color);
     }
   }
 }

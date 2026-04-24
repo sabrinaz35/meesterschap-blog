@@ -1,0 +1,21 @@
+main {
+    overflow: scroll;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: start;
+}
+
+article {
+    gap: 1rem;
+
+    img {
+        width: 25rem;
+        border-radius: 5px;
+        /* filter: grayscale(1); */
+    }
+}
+

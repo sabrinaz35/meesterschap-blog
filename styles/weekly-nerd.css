@@ -88,14 +88,14 @@ article {
   section:nth-of-type(2){
     overflow: clip;
 
-    div::nth-of-type(odd){
+    .scroll-animation:nth-of-type(odd){
       transform: translateY(calc(-100% + 100vh));
     }
 
   }
 }
 
-div:nth-of-type(odd){
+.scroll-animation:nth-of-type(odd){
   animation: moveArticles linear forwards;
   animation-timeline: scroll(root block);
 }
