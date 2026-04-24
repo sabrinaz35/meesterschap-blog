@@ -37,7 +37,10 @@ main {
     grid-template-columns: repeat(2,1fr);
     position: relative;
     gap: 1rem;
+    margin: 0 10rem;
   }
+
+  
 }
 
 header {
@@ -88,14 +91,14 @@ article {
   section:nth-of-type(2){
     overflow: clip;
 
-    .scroll-animation:nth-of-type(odd){
+    section:nth-of-type(2) .scroll-animation:nth-of-type(2){
       transform: translateY(calc(-100% + 100vh));
     }
 
   }
 }
 
-.scroll-animation:nth-of-type(odd){
+section:nth-of-type(2) .scroll-animation:nth-of-type(2){
   animation: moveArticles linear forwards;
   animation-timeline: scroll(root block);
 }

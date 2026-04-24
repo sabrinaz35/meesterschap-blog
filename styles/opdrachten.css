@@ -1,12 +1,13 @@
-main {
-    overflow: scroll;
-}
+
 
 div {
-    display: flex;
-    flex-direction: row;
-    width: 80vw;
-    justify-content: start;
+    overflow: scroll;
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        justify-content: start;
+    }
 }
 
 article {
