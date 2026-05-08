@@ -19,7 +19,7 @@
 
   /* TEXT SIZE */
   --regular-text-size: 1rem;
-  --h1-text-size: 2rem;
+  --h1-text-size: clamp(80%, 8vw, 10rem);
   --h2-text-size: 1.75rem;
   --h3-text-size: 1.5rem;
 
@@ -52,13 +52,11 @@
 /* BASIC STYLING */
 body {
   font-family: Work sans;
-  background-color: var(  --backgound-color);
-
+  background: linear-gradient(45deg, var(--blob-color-1), black);
+  mix-blend-mode: multiply(1);
 }
 
 header {
-
-
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -70,8 +68,17 @@ header {
     border: 1px solid var(--color-1);
     border-radius: 20px;
     margin: 1rem 0;
-  
-    /* box-shadow: 0px 0px 20px 5px var(--color-1); */
+
+
+    background: rgba(255, 168, 216, 0.239);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 168, 216, 0.56);
+    box-shadow: 0px 0px 10px 2px var(--color-1);
+
+
 
     a {
       text-decoration: none;
@@ -83,7 +90,6 @@ header {
 
 main {
   display: flex;
-  position: relative;
   
 
 
@@ -98,4 +104,37 @@ main {
   text-align: center;
 }
 
+}
+
+
+article {
+    background: rgba(255, 168, 216, 0.239);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 168, 216, 0.56);
+  box-shadow: 0px 0px 10px 2px var(--color-1);
+}
+
+
+/* Mouse follow  */
+
+.mouse-div {
+    z-index: 9999;
+    position: fixed; /* fixed ipv absolute, volgt de viewport */
+    pointer-events: none; /* zodat hij je andere elementen niet blokkeert */
+    top: 0;
+    left: 0;
+
+  &::before {
+    content: " ";
+;    display: block;
+    width: .5rem;
+    aspect-ratio: 1/2;
+    background-color: var(--blob-color-3);
+    box-shadow: 0px 0px 10px 2px var(--blob-color-3);
+    border-radius: 100% / 100%;
+    corner-shape: scoop;
+  }
 }

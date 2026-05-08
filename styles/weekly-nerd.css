@@ -4,8 +4,7 @@ html {
 
 /* https://css-irl.info/css-halftone-patterns/ */
 body {
-  background: linear-gradient(45deg, var(--blob-color-1), black);
-  mix-blend-mode: multiply(1);
+
 
   &::after {
     content: " ";
@@ -27,6 +26,7 @@ main {
   display: flex;
   flex-direction: column;
   place-items: center;
+  margin-bottom: 5rem;
 
   h1{
     margin: 2rem 0;
@@ -43,18 +43,6 @@ main {
   
 }
 
-header {
-
-  nav{
-    background: rgba(255, 168, 216, 0.239);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 168, 216, 0.56);
-    box-shadow: 0px 0px 10px 2px var(--color-1);
-  }
-}
 
 article {
   display: flex;
@@ -66,15 +54,6 @@ article {
 
   max-width: 30rem;
   margin: 2rem .5rem;
-
-
-  background: rgba(255, 168, 216, 0.239);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 168, 216, 0.56);
-  box-shadow: 0px 0px 10px 2px var(--color-1);
   
   p:first-of-type {
     font-style: italic;

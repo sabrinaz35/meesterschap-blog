@@ -1,47 +1,155 @@
-
-
-div {
-    width: 100%;
-    overflow: clip;
-    display: grid;
-    justify-content: center;
-
-   
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        width: 80vw;
-        height: 100vh;
-        justify-content: start;
-        overflow: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-
-         /* Scroll code */
-   
-        
-
-        li {
-            flex: 0 0 100%;
-            scroll-snap-align: center;
-
-            display: flex;
-            justify-content: center;
-
-        }
-    }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-article {
-    width: min(80%, 900px);
-    max-width: none;
+body {
+    overflow-x: hidden;
+    color: white;
+}
 
+main {
+
+    section {
+        /* Hoogte bepalen voor de scroll animatie */
+        height: 600vh; 
+        position: relative;
+
+        > div {
+            /* Laten hangen van de section voor de scroll */
+            position: sticky;
+            top: 0;
+
+            height: 100vh;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+
+
+            > ul {
+                display: flex;
+                flex-direction: row;
+
+                height: 100vh;
+                width: max-content;
+
+                list-style: none;
+
+                /* animatie */
+                animation: horizontalScroll linear forwards;
+
+                /* scroll koppelen aan de pagina */
+                animation-timeline: scroll(root block);
+
+                /* alleen binnen deze section */
+                animation-range: 0% 100%;
+
+
+                li {
+                    flex: 0 0 100vw;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin: 1rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+/* Styling article */
+article {
+    width: clamp( 30vw, 100%, 55vw);
+    height: stretch;
+
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-rows: 1fr 5fr 6fr 1fr;;
     gap: 1rem;
+    padding: 1rem;
 
     img {
         width: 100%;
-        border-radius: 5px;
+        border-radius: 1rem;
+    }
+
+    div {
+        display: grid;
+        gap: .5rem;
+
+        p {
+            align-self: flex-start;
+            font-size: clamp(16px, 1vw , 2rem);
+        }
+    }
+
+
+    .button-sites {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        align-items: end;
+        li {
+            width: fit-content;
+            padding: 1rem;
+            background: rgba(255, 168, 216, 0.56);;
+            border-radius: 15px;
+
+            &:hover {
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 168, 216, 0.56);
+                box-shadow: 0px 0px 10px 2px var(--color-1);
+
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
     }
 }
 
+
+@media (width < 700px) {
+    article {
+        width: fit-content;
+        margin: 1rem;
+
+        .button-sites {
+            
+            li  {
+                padding: .9rem;
+            a {
+                font-size: .8rem;
+            }
+            }
+    }
+}
+}
+
+@keyframes horizontalScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        /*
+        aantal slides - 1
+        jij hebt 6 li's
+        dus 5 schermen bewegen
+        */
+        transform: translateX(-775vw);
+    }
+}

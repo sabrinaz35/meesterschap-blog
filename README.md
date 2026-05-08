@@ -15,6 +15,10 @@ Tijdens deze minor heb ik verschillende leerdoelen voor mijzelf gesteld die luid
 
 - https://css-irl.info/css-halftone-patterns/
 
+## beetje javascript
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- https://www.youtube.com/watch?v=vJI4RdL1dz8 
+
 
 ## Inspo tutorials
 - https://www.frontend.fyi/tutorials/make-a-gradient-follow-the-cursor 
