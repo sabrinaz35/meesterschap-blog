@@ -129,7 +129,7 @@ article {
 
   &::before {
     content: " ";
-;    display: block;
+    display: block;
     width: .5rem;
     aspect-ratio: 1/2;
     background-color: var(--blob-color-3);

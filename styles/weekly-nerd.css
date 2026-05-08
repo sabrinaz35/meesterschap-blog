@@ -62,6 +62,27 @@ article {
   p:first-of-type ~ p {
     margin-top: 1rem;
   }
+
+  ul li {
+    margin-left: 1rem;
+    /* list-style-type: none;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+      width: .5rem;
+      aspect-ratio: 1/2;
+      background-color: var(--blob-color-3);
+      box-shadow: 0px 0px 10px 2px var(--blob-color-3);
+      border-radius: 100% / 100%;
+      corner-shape: scoop;
+      margin:0 .5rem;
+    } */
+  }
+
+  &:hover {
+     box-shadow: 0px 0px 20px 5px var(--color-1);
+  }
 }
 
 
@@ -71,7 +92,7 @@ article {
     overflow: clip;
 
     section:nth-of-type(2) .scroll-animation:nth-of-type(2){
-      transform: translateY(calc(-100% + 100vh));
+      transform: translateY(0);
     }
 
   }
@@ -85,8 +106,9 @@ section:nth-of-type(2) .scroll-animation:nth-of-type(2){
 
 @keyframes moveArticles{
   from {
-    transform: translateY(calc(-100% + 100vh));
+    transform: translateY(0);
   } to {
-    transform: translateY(calc(100% - 100vh));
+    /* Deze aanpassen als iet bij de rechter kolom weg valt en dan de linker waarde*/
+    transform: translateY(calc(0% - 100vh));
   }
 }
