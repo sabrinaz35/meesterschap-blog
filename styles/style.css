@@ -7,10 +7,10 @@
 
   /* COLORS */
   color-scheme: light dark;
-  --header-color: light-dark(#000, #fff) ;
-  --text-color: light-dark(#000, #fff,);
+  --header-color: light-dark(#000, #000000) ;
+  --text-color: light-dark(#000, #fff);
   --color-1: light-dark( rgba(255, 168, 216), #80399b);
-  --background-color:light-dark linear-gradient(45deg, var(--blob-color-1), white);
+  --background-color: linear-gradient(45deg, var(--blob-color-1), white);
 
   /* BLOB COLORS */
   --blob-color-1:light-dark( #9e59b9, #80399b);
@@ -18,12 +18,12 @@
   --blob-color-3:light-dark( rgb(223, 46, 140), deeppink);
 
   /* ARTICLE COlORS */
---background-article: rgba(250, 98, 181, 0.239);
---border-article: rgba(254, 128, 197, 0.56);
+  --background-article: rgba(250, 98, 181, 0.239);
+  --border-article: rgba(254, 128, 197, 0.56);
 
-/* HEADER COLORS */
---background-header: rgba(255, 168, 216, 0.239) ;
---border-header: rgba(255, 168, 216, 0.56); ;
+  /* HEADER COLORS */
+  --background-header: rgba(255, 168, 216, 0.239) ;
+  --border-header: rgba(255, 168, 216, 0.56); 
 
   /* TEXT SIZE */
   --regular-text-size: 1rem;
@@ -31,7 +31,7 @@
   --h2-text-size: 1.75rem;
   --h3-text-size: 1.5rem;
 
-  /* PADDIN? MARGIN SIZE */
+  /* PADDIN?g MARGIN SIZE */
   --padding-size: 1rem;
 
   /* FONTS */
