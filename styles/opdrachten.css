@@ -7,7 +7,6 @@
 
 body {
     overflow-x: hidden;
-    color: white;
 }
 
 main {
@@ -56,6 +55,25 @@ main {
                     align-items: center;
 
                     margin: 1rem;
+
+                    /* Iets donkerder ivm tekst */
+                    &:nth-of-type(5) h2, &:nth-of-type(6) h2{
+                            background-color: #1d0d24e3;
+                        }
+
+
+                    h2 {
+                        position: absolute;
+                        color: #fff;
+                        top: 1rem;
+                        left: 1rem;
+                        text-shadow: grey 3px 5px 10px;
+                        background: #1d0d24c9;
+                        padding: 1rem;
+                        border-bottom-right-radius: 15px;
+                        border-top-left-radius: 15px;
+                    }
+
                 }
             }
         }
@@ -92,33 +110,6 @@ article {
         }
     }
 
-
-    .button-sites {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        align-items: end;
-        li {
-            width: fit-content;
-            padding: 1rem;
-            background: rgba(255, 168, 216, 0.56);;
-            border-radius: 15px;
-
-            &:hover {
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);
-                border: 1px solid rgba(255, 168, 216, 0.56);
-                box-shadow: 0px 0px 10px 2px var(--color-1);
-
-            }
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
-
-    }
 }
 
 
@@ -152,4 +143,9 @@ article {
         */
         transform: translateX(-775vw);
     }
+}
+
+/* https://piccalil.li/blog/some-practical-examples-of-view-transitions-to-elevate-your-ui/ */
+@view-transition {
+	navigation: auto;
 }

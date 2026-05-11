@@ -26,18 +26,10 @@ main {
   display: flex;
   flex-direction: column;
   place-items: center;
-  margin-bottom: 5rem;
+  margin: 5rem 1rem;
 
   h1{
     margin: 2rem 0;
-  }
-
-  section:nth-of-type(2){
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: relative;
-    gap: 1rem;
-    margin: 0 10rem;
   }
 
   
@@ -54,6 +46,8 @@ article {
 
   max-width: 30rem;
   margin: 2rem .5rem;
+
+  color: var(--text-color);
   
   p:first-of-type {
     font-style: italic;
@@ -86,6 +80,21 @@ article {
 }
 
 
+/* Animatie bij groter scherm */
+@media (width > 700px) {
+
+  main {
+    margin-bottom: 5rem;
+
+    section:nth-of-type(2){
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      position: relative;
+      gap: 1rem;
+      margin: 0 10rem;
+  }
+  }
+
 /* Julius heeft mij hierbij geholpen */
 @supports (animation-timeline:scroll()){
   section:nth-of-type(2){
@@ -111,4 +120,11 @@ section:nth-of-type(2) .scroll-animation:nth-of-type(2){
     /* Deze aanpassen als iet bij de rechter kolom weg valt en dan de linker waarde*/
     transform: translateY(calc(0% - 100vh));
   }
+}
+}
+
+
+/* https://piccalil.li/blog/some-practical-examples-of-view-transitions-to-elevate-your-ui/ */
+@view-transition {
+	navigation: auto;
 }

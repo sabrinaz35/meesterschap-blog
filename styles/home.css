@@ -1,21 +1,55 @@
 body {
-  justify-content: center;
-  align-self: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   position: relative;
+  min-height: 100vh;
+
 
 
   main {
-    position: initial;
-    height: 80vh;
-    pointer-events: none;
-    display: flex;
+    /* height: 80vh; */
+    display: block;
     justify-content: center;
     align-items: center;
-  }
+    z-index: -2;
 
+    section {
+        height: 80vh;
+        place-content: center;
+        
+        h2 {
+          display: grid;
+          place-items: center;
+          font-family: Work sans;
+          font-weight: 300;
+        }
+    }
+
+    article {
+      padding: 2rem;
+      margin: 3rem 5rem;
+
+      button {
+            border: none;
+            width: fit-content;
+            padding: 1rem;
+            background: rgba(255, 168, 216, 0.56);;
+            border-radius: 15px;
+
+            &:hover {
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 168, 216, 0.56);
+                box-shadow: 0px 0px 10px 2px var(--color-1);
+
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+      }
+    }
+
+}
 }
 
 
@@ -27,6 +61,7 @@ body {
   height: 100vh;
   padding:0 2rem;
   overflow: clip;
+  z-index: -1;
 
   /* Styling blobs */
   div {
@@ -46,7 +81,7 @@ body {
     top: var(--top-position);
     right: var(--right-position);
 
-  animation: movingBlob 10s ease infinite;
+    animation: movingBlob 10s ease infinite;
 
   &:nth-of-type(2){
     --width: 10rem;
@@ -83,6 +118,9 @@ body {
     top: 90%;
     right: 50%;
   }
+
+
+  
   }
 }
 
@@ -111,5 +149,8 @@ body {
   } 
 }
 
-
+/* https://piccalil.li/blog/some-practical-examples-of-view-transitions-to-elevate-your-ui/ */
+@view-transition {
+	navigation: auto;
+}
 
