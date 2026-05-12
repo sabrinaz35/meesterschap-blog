@@ -32,6 +32,9 @@ main {
     margin: 2rem 0;
   }
 
+  & section > ul > li {
+    list-style-type: none;
+  }
   
 }
 

@@ -35,6 +35,7 @@ Dit wil ik gaan doen door wat lastigere funtionaliteiten op mij te nemen binnen 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display 
 
 - https://css-irl.info/css-halftone-patterns/
+- https://medium.com/@matanbobi/how-to-use-emojis-as-favicons-371795662465 
 
 ## beetje javascript
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
