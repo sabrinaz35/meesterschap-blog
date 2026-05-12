@@ -112,7 +112,6 @@ article {
 
 }
 
-
 @media (width < 700px) {
     article {
         width: fit-content;
@@ -144,6 +143,8 @@ article {
         transform: translateX(-775vw);
     }
 }
+
+
 
 /* https://piccalil.li/blog/some-practical-examples-of-view-transitions-to-elevate-your-ui/ */
 @view-transition {
