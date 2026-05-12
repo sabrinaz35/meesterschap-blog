@@ -73,19 +73,19 @@ body {
 
 
 
-@media (width > 850px) {
+@media (width > 800px) {
 
 body {
   main {
     div:first-of-type {
       grid-template-columns: 1fr 1fr;
-      margin: 3rem 10rem;
+      margin: 3rem 15vw;
       gap: 3rem;
     }
 
     article {
         &:not(div article) {
-          margin: 3rem 10rem;
+          margin: 3rem 15vw;
         }
     }
   }
