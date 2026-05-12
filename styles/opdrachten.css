@@ -68,7 +68,7 @@ main {
                         top: 1rem;
                         left: 1rem;
                         text-shadow: grey 3px 5px 10px;
-                        background: #1d0d24c9;
+                        background: var(--background-label-opdrachten);
                         padding: 1rem;
                         border-bottom-right-radius: 15px;
                         border-top-left-radius: 15px;

@@ -9,9 +9,23 @@ Tijdens deze minor heb ik verschillende leerdoelen voor mijzelf gesteld die luid
 
 
 
-## Nieuwe leerdoelen
+## Nieuwe leerdoelen voor de meesterproef
 Tijdens de verschillende vakken heb ik al ontzettend veel geleerd, en heb ik mijn leerdoelen op verschillende manieren kunnnen toepassen. Alleen wil ik ze voordat ik aan de meesterproef begin toch wat fine tunen en aanpassen.
-1. Aan het einde van de meesterproef wil ik duidelijkere code schrijven, zodat het overdraagbaar en makkelijk te bergijpen is voor een ander. 
+
+1. Tijdens het samenwerken mijn belangen beter benoemen en de andere daarin ook de ruimte in te geven. Zodat de communicatie in groepsverband beter voor iedereen prettig verloopt. 
+
+Dit wil ik doen door vooraf een aantal dingen af te spreken. Zoals manier van communiceren, wie de mergen van GitHub bijhoudt etc. 
+
+2. Aan het einde van de meesterproef wil ik duidelijkere code schrijven, zodat het overdraagbaar en makkelijk te bergijpen is voor een ander. Zeker met het schrijven van javascript code, ik begrijp nu wat ik zelf doe, maar andere moeten het ook nog snappen.
+
+Dit gaat hand in hand met de afspraken maken, eerst variabelen bovenin of per functie noteren. Verschillende bestanden of juist alles in een bestand.
+
+
+3. Daarnaast wil ik ook werken aan visuele esthetiek van een website, door mooie en interessante features eraan toe te voegen, die passend zijn bij het project. Een beetje het randje opzoeken van mijn kunnen en daarbij ook nog blijven werken aan mijn leerdoel van afgelopen weken het schrijven van redelijk complexe javascript/css code die ik ook begrijp.
+
+Dit wil ik gaan doen door wat lastigere funtionaliteiten op mij te nemen binnen het meesterproef project.
+
+
 
 
 # Bronnen
