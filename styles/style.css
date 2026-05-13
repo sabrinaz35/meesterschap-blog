@@ -45,13 +45,13 @@
 @font-face {
   /* https://www.1001fonts.com/fugaz-one-font.html */
   font-family: Fugaz one;
-  src: url(/fonts/fugaz-one.regular.ttf) ;
+  src: url(./fonts/fugaz-one.regular.ttf) ;
 }
 
 @font-face {
   /* https://fonts.google.com/specimen/Work+Sans */
   font-family: "Work sans";
-  src: url(/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+  src: url(./fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 900;
   font-style: normal;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display */
