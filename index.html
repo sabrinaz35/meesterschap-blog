@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./styles/background-animatie.css">
         <!-- https://medium.com/@matanbobi/how-to-use-emojis-as-favicons-371795662465 -->
         <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"/>
+        
         <title>Homepage meesterblog</title>
     </head>
     <body>
@@ -16,6 +17,7 @@
                 <a href="./index.html">Homepagina</a>
                 <a href="./pages/opdrachten.html">Opdrachten</a>
                 <a href="./pages/weekly-nerd.html">Weekly nerds</a>
+                <a href="./pages/meesterproef.html">Meesterproef</a>
             </nav>
         </header>
         <main>
@@ -24,7 +26,7 @@
                 <h2>Web design en development 2026</h2>
             </section>
 
-            <article>
+            <article class="article-homepage">
                 <h2>Leerdoelen voor meesterproef</h2>
                 <ol>
                     
@@ -52,7 +54,7 @@
             </article>
 
             <div>
-                <article>
+                <article class="article-homepage">
                     <h2>Werk waar ik het trotst op ben</h2>
                     <p>Er zijn een aantal werken waar ik wel trots op ben en dat zijn de css en de API werken. Dat komt omdat ik 
                         daar bij beide vakken echt veel technische snufjes heb geleerd en heb weten toe te passen.</p>
@@ -60,7 +62,7 @@
                     <button><a href="/pages/opdrachten.html">Check al mijn werk</a></button>
                 </article>
 
-                <article>
+                <article class="article-homepage">
                     <h2>Interessantste weekly nerd</h2>
                     <p>Een van de meest interessante en toffe weekly nerds vond ik wel Niels bij de web you want, omdat hij echt een web voor zichzelf maakt wat hij leuk en interessant vindt.
                         Hij volgt zijn passie en zijn ideeën en ik denk dat ik daar nog veel uit kan halen betreft mijn eigen leerproces.
@@ -72,7 +74,7 @@
                 </article>
             </div>
 
-            <article>
+            <article class="article-homepage">
                 <h2>Reflectie</h2>
                 <h3>Na eerste gesprek</h3>
                 <p>
@@ -117,6 +119,10 @@
         <footer>
 
         </footer>
-        <script src="./script.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+        <script src="./scripts/gsap.js"></script>
     </body>
 </html>

@@ -47,6 +47,8 @@ Dit wil ik gaan doen door wat lastigere funtionaliteiten op mij te nemen binnen 
 
 - https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=20&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes 
 
+- https://gsap.com/docs/v3/Installation?tab=cdn&module=esm&require=false 
+
 ## Inspo tutorials
 - https://www.frontend.fyi/tutorials/make-a-gradient-follow-the-cursor 
 - https://www.youtube.com/watch?v=ceJ82RaW9mM 
