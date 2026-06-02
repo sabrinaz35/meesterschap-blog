@@ -2,8 +2,6 @@ body {
   position: relative;
   min-height: 100vh;
 
-
-
   main {
     /* height: 80vh; */
     display: block;
@@ -70,7 +68,25 @@ body {
 }
 }
 
+/* main {
+  position: relative;
+} */
 
+/* .article-homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  opacity: 0;
+} */
+
+.bullet-container {
+  position: absolute;
+  top: 0;    
+  left: 0;
+  will-change: transform;
+  opacity: 0;
+}
 
 
 @media (width > 800px) {
