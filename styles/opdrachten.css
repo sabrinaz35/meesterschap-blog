@@ -110,6 +110,13 @@ article {
         }
     }
 
+    details {
+        height: fit-content;
+        padding: 1rem;
+        border-radius: inherit;
+        background: var(--background-article);
+    }
+
 }
 
 @media (width < 700px) {
