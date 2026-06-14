@@ -29,6 +29,8 @@ Dit wil ik gaan doen door wat lastigere funtionaliteiten op mij te nemen binnen 
 
 
 # Bronnen
+## html
+- https://www.piliapp.com/symbol/menu/
 ## Fonts 
 - https://www.1001fonts.com/fugaz-one-font.html
 - https://fonts.google.com/specimen/Work+Sans 

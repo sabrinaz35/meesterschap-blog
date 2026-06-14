@@ -81,8 +81,10 @@ Draggable.create('.article-homepage', {
 // MARK: Scrambletekst
 // *****************
 
-gsap.to('h1', {
-  duration: 3, 
-  scrambleText: "Meesterschapsblog van Sabrina"
-});
-
+// https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript
+if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  gsap.to('h1', {
+    duration: 3, 
+    scrambleText: "Meesterschapsblog van Sabrina"
+  });
+}

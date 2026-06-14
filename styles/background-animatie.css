@@ -76,6 +76,34 @@
     }
   }
 
+/* Background fade out met een scroll animation */
+.background{
+  /* https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=20&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes */
+    position: fixed;
+    inset: 0;
+    animation: fadeBackground linear forwards;
+    animation-timeline: view();
+    animation-range: cover 50% cover 100%;
+}
+
+/* MARK:media queries */
+@media (prefers-reduced-motion: reduce) {
+  .background {
+    animation: none;
+
+    div {
+      animation: none;
+      
+    }
+  }
+}
+
+/* MARK: keyframes */
+@keyframes fadeBackground {
+    to {
+        opacity: 0;
+    }
+}
 
 /* Nog zoekende in hoe ik het beste de blobs kan laten bewegen */
 @keyframes movingBlob {
@@ -91,22 +119,4 @@
     transform: translatex(calc(var(--right-position) + 20%));
     transform: translatey(calc(var(--right-position) + -20%));
   } 
-}
-
-
-/* Background fade out met een scroll animation */
-.background{
-  /* https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=20&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes */
-    position: fixed;
-    inset: 0;
-    animation: fadeBackground linear forwards;
-    animation-timeline: view();
-    animation-range: cover 50% cover 100%;
-}
-
-
-@keyframes fadeBackground {
-    to {
-        opacity: 0;
-    }
 }

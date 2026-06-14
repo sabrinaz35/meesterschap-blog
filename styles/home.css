@@ -88,9 +88,12 @@ body {
   opacity: 0;
 }
 
+/* MARK: media queries */
+/* @media (prefers-reduced-motion: reduce){
+  
+} */
 
 @media (width > 800px) {
-
 body {
   main {
     div:first-of-type {
