@@ -184,6 +184,7 @@ article {
             
             li  {
                 padding: .9rem;
+                display: block;
             a {
                 font-size: .8rem;
             }
