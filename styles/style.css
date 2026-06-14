@@ -76,14 +76,13 @@ body {
 
 header {
   nav {
-     input[type="checkbox"] {
+    input[type="checkbox"] {
       display: none;
       cursor: pointer;
       font-size: 3rem;
-
     }
 
-  ul{
+  ul {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -116,52 +115,50 @@ header {
 }
 
 @media (width < 768px) {
- input[type="checkbox"]  {
-  display: flex ;
-  appearance: none;
-   anchor-name: --anchor-menu;
-  
-  &::after{
-    content: "☰";
-    padding: .5rem;
-    font-size: 2rem;
-    color: var(--border-article);
-
-   
+  input[type="checkbox"]  {
+    display: flex ;
+    appearance: none;
+    anchor-name: --anchor-menu;
+    
+    &::after{
+      content: "☰";
+      padding: .5rem;
+      font-size: 2rem;
+      color: var(--border-article);
+    }
   }
-  
- }
 
- header nav ul{
-  display: none ;
-  flex-direction: column;
-  position: absolute;
-  position-anchor: --anchor-menu;
-  position-area: bottom left;
+  header nav ul{
+    display: none ;
+    flex-direction: column;
+    position: absolute;
+    position-anchor: --anchor-menu;
+    position-area: bottom left;
 
-  gap: .5rem;
-  margin-left: .5rem;
+    gap: .5rem;
+    margin-left: .5rem;
 
-  opacity: 0;
-  translate: 0 -1rem;
-  transition: opacity .5s, translate .5s, display .5s;
-  transition-behavior: allow-discrete;
- }
-
- header:has(#nav-toggle:checked) nav ul {
-  display: flex ;
-
-  opacity: 1;
-  translate: 0 0;
-  transition: opacity .5s, translate .5s;
-  transition-behavior: allow-discrete;
-   
-  @starting-style{
-    opacity:0 ;
+    opacity: 0;
     translate: 0 -1rem;
+    transition: opacity .5s, translate .5s, display .5s;
+    transition-behavior: allow-discrete;
   }
- }
+
+  header:has(#nav-toggle:checked) nav ul {
+    display: flex ;
+
+    opacity: 1;
+    translate: 0 0;
+    transition: opacity .5s, translate .5s;
+    transition-behavior: allow-discrete;
+    
+    @starting-style{
+      opacity:0 ;
+      translate: 0 -1rem;
+    }
+  }
 }
+
 
 main {
   display: flex;
@@ -245,10 +242,18 @@ article {
 }
 
 /* MARK: media queries */
-
 @media (prefers-reduced-motion: reduce) {
   .mouse-div {
     display: none;
   }
+
+  header nav ul {
+    transition: 0s;
+  }
+
+  header:has(#nav-toggle:checked) nav ul  {
+    transition:0s;
+  }
+  
 
 }

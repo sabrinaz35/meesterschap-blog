@@ -7,9 +7,13 @@
 
 body {
     overflow-x: hidden;
+    position: relative;
+    z-index: -5;
 }
 
 main {
+    position: relative;
+    z-index: -1;
 
     section {
         /* Hoogte bepalen voor de scroll animatie */
@@ -130,8 +134,10 @@ article {
     gap: 1rem;
     padding: 1rem;
 
-    img {
+    iframe, img {
         width: 100%;
+        
+        aspect-ratio: 16 / 9;
         border-radius: 1rem;
     }
 
