@@ -76,10 +76,13 @@ body {
 
 header {
   nav {
-     .toggle-label {
+     input[type="checkbox"] {
       display: none;
       cursor: pointer;
+      font-size: 3rem;
+
     }
+
   ul{
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,19 +116,50 @@ header {
 }
 
 @media (width < 768px) {
- .toggle-label {
-  display: block;
+ input[type="checkbox"]  {
+  display: flex ;
+  appearance: none;
+   anchor-name: --anchor-menu;
+  
+  &::after{
+    content: "☰";
+    padding: .5rem;
+    font-size: 2rem;
+    color: var(--border-article);
+
+   
+  }
+  
  }
 
- header nav{
-  ul {
-  display: none !important;
+ header nav ul{
+  display: none ;
   flex-direction: column;
- }
+  position: absolute;
+  position-anchor: --anchor-menu;
+  position-area: bottom left;
+
+  gap: .5rem;
+  margin-left: .5rem;
+
+  opacity: 0;
+  translate: 0 -1rem;
+  transition: opacity .5s, translate .5s, display .5s;
+  transition-behavior: allow-discrete;
  }
 
- #nav-toggle:checked ~ ul {
-  display: flex !important;
+ header:has(#nav-toggle:checked) nav ul {
+  display: flex ;
+
+  opacity: 1;
+  translate: 0 0;
+  transition: opacity .5s, translate .5s;
+  transition-behavior: allow-discrete;
+   
+  @starting-style{
+    opacity:0 ;
+    translate: 0 -1rem;
+  }
  }
 }
 

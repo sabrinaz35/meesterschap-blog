@@ -80,13 +80,13 @@ body {
   opacity: 0;
 } */
 
-.bullet-container {
+/* .bullet-container {
   position: absolute;
   top: 0;    
   left: 0;
   will-change: transform;
   opacity: 0;
-}
+} */
 
 /* MARK: media queries */
 /* @media (prefers-reduced-motion: reduce){
