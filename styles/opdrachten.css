@@ -37,7 +37,7 @@ main {
                 height: 100vh;
                 width: max-content;
 
-                list-style: none;
+                list-style-type: none;
 
                 /* animatie */
                 animation: horizontalScroll linear forwards;
@@ -49,7 +49,7 @@ main {
                 animation-range: 0% 100%;
 
 
-                li {
+                > li {
                     flex: 0 0 100vw;
 
                     display: flex;

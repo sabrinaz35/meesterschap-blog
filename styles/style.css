@@ -201,6 +201,7 @@ article {
             padding: 1rem;
             background: var(--border-article);
             border-radius: 15px;
+            list-style-type: none;
 
             &:hover {
                 backdrop-filter: blur(5px);
