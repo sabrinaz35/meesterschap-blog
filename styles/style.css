@@ -179,7 +179,7 @@ main {
 }
 
 
-article {
+article, details {
   background: var(--background-article);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -220,6 +220,9 @@ article {
     }
 }
 
+details, summary {
+  padding: .5rem;
+}
 
 /* Mouse follow  */
 

@@ -27,6 +27,11 @@ main {
     width: 70vw;
     padding: 2rem;
 
+    details {
+        padding: 1rem;
+        
+    }
+
     &:not(div article) {
         margin: 3rem 1rem;
     
