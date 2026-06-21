@@ -24,20 +24,31 @@ main {
 
 
 .article-meesterproef {
+    display: grid;
     width: 70vw;
     padding: 2rem;
+    gap: 1rem;
+
+
 
     details {
         padding: 1rem;
+
+        ul li{
+            display: grid;
+            gap: .75rem;
+        }
         
+        li{
+        padding: 1rem ;
+        list-style-type: none;
+        }
     }
 
     &:not(div article) {
         margin: 3rem 1rem;
     
 
-    ol li{
-        padding: 1rem 0;
-    }
+  
 }
 }
