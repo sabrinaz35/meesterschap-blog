@@ -133,6 +133,7 @@ article {
     grid-template-rows: 1fr 5fr 15fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    overflow-y: scroll;
 
     iframe, img {
         width: 100%;
