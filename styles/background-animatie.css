@@ -96,6 +96,10 @@
       
     }
   }
+
+    @view-transition {
+	navigation: none;
+}
 }
 
 /* MARK: keyframes */
@@ -120,3 +124,4 @@
     transform: translatey(calc(var(--right-position) + -20%));
   } 
 }
+
