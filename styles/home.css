@@ -68,32 +68,17 @@ body {
 }
 }
 
+.article-homepage {
 
+  img {
+    max-width: 100%;
+  }
 
-/* main {
-  position: relative;
-} */
+  details p , h2, h3{
+    margin: 1rem;
+  }
+}
 
-/* .article-homepage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  will-change: transform;
-  opacity: 0;
-} */
-
-/* .bullet-container {
-  position: absolute;
-  top: 0;    
-  left: 0;
-  will-change: transform;
-  opacity: 0;
-} */
-
-/* MARK: media queries */
-/* @media (prefers-reduced-motion: reduce){
-  
-} */
 
 @media (width > 800px) {
 body {

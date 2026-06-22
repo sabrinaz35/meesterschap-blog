@@ -224,6 +224,11 @@ details, summary {
   padding: .5rem;
 }
 
+summary {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 /* Mouse follow  */
 
 .mouse-div {

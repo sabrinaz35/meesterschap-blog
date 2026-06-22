@@ -158,16 +158,9 @@ article {
         border-radius: inherit;
         background: var(--background-article);
 
-        /* overflow: hidden; */
-        
-        /* &::details-content {
-            block-size: 0;
-            transition: block-size 2s;
+        h3 {
+            margin: 1rem 0;
         }
-
-         &[open]::details-content {
-            block-size: auto;
-         } */
     }
 
 
