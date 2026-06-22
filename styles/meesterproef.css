@@ -5,9 +5,16 @@ main {
     width: 100vw;
    
     min-height: 100vh;
-   
+
+
     h1 {
-        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    > p{
+        width: 70%;
+        margin-bottom: 3rem;
+        font-weight: 300;
     }
 
    .container-iframe {
